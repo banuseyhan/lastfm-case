@@ -13,11 +13,11 @@ export default function artistAlbumReducer(state = initialState, { type, payload
       return { ...state, fetching: false, fetched: true, posts: payload };
     case FETCH_POSTS_ERROR:
       return { ...state, fetching: false, error: payload };
-      break;
+      
 
     default:
       return state
-      break;
+      
   }
 }
 
